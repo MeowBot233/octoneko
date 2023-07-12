@@ -1,0 +1,13 @@
+name = "octoneko"
+main = "src/worker.ts"
+compatibility_date = "2023-07-03"
+
+kv_namespaces = [
+    { binding = "octoneko", id = "527c2b8889754f9c9667b489bdab3358", preview_id = "08be06e231cf4ef7aaba9ef77e863c7f" }
+]
+
+# Cron Triggers
+# Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
+# Configuration: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
+[triggers]
+crons = ["* * * * *"] # * * * * * = run every minute
